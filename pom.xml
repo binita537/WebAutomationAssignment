@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>7.16.1</version>
+			<version>7.9.0</version>
 		</dependency>
 
 		<dependency>
@@ -60,7 +60,7 @@
 			<version>5.7.0</version>
 		</dependency>
 
-
+		
 	</dependencies>
 
 	<build>
@@ -83,21 +83,14 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>3.0.0-M5</version>
+				<version>3.0.0</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
 			</plugin>
 
-			<!-- <plugin>
-                <groupId>io.cucumber</groupId>
-                <artifactId>cucumber-maven-plugin</artifactId>
-                <version>6.11.0</version>
-                <configuration>
-                     Specify the path to your feature files 
-                    <featuresDirectory>src/test/resources/features</featuresDirectory>
-                     Specify the path to your step definitions 
-                    <glue>your.package.stepdefinitions</glue>
-                     Configure any other Cucumber options here 
-                </configuration>
-            </plugin>-->
 
 		</plugins>
 	</build>

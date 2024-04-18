@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.webautomation.config.AppConfig;
 import com.webautomation.config.SpringContextConfiguration;
 import com.webautomation.pom.HomePage;
 import com.webautomation.pom.SearchResultsPage;
@@ -19,8 +18,6 @@ public class BaseDefinition {
 	@Autowired
 	WebDriver driver;
 
-	@Autowired
-	AppConfig appConfig;
 
 	@Autowired
 	HomePage homePage;

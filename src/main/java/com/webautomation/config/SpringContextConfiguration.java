@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 //this class  scan for all classes that are annotated with @Component
+import org.springframework.context.annotation.Scope;
 
 import com.webautomation.webdrivers.DriverFactory;
 
@@ -19,15 +20,15 @@ public class SpringContextConfiguration {
 	@Autowired
 	DriverFactory driverFactory;
 
-	@Autowired
-	BrowserConfig browserConfig;
-	
+
 	@Bean
+	@Scope("cucumber-glue")
 	public WebDriver webDriver() {
 		return driverFactory.createDriver("chrome");
 	}
 
 	@Bean
+	@Scope("cucumber-glue")
 	public WebDriverWait webDriverWait(WebDriver driver) {
 		return new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
