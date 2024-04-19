@@ -1,70 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-19T08:29:32 IST" name="Default suite" finished-at="2024-04-19T08:29:32 IST" duration-ms="139">
+  <suite started-at="2024-04-19T17:07:06 IST" name="Default suite" finished-at="2024-04-19T17:08:26 IST" duration-ms="80209">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.CucumberRunner@68f1b17f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-19T08:29:32 IST" name="Default test" finished-at="2024-04-19T08:29:32 IST" duration-ms="139">
-      <class name="Runner.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.CucumberRunner@68f1b17f]" started-at="2024-04-19T08:29:32 IST" name="setUpClass" finished-at="2024-04-19T08:29:32 IST" duration-ms="70" status="FAIL">
+    <test started-at="2024-04-19T17:07:06 IST" name="Default test" finished-at="2024-04-19T17:08:26 IST" duration-ms="80209">
+      <class name="runner.CucumberRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-19T17:07:06 IST" name="setUpClass" finished-at="2024-04-19T17:07:07 IST" duration-ms="1076" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@177bea38]]>
+                <![CDATA[org.testng.TestRunner@6fdb1a59]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AbstractMethodError">
-            <message>
-              <![CDATA[Receiver class io.cucumber.testng.TestNGCucumberOptionsProvider$TestNGCucumberOptions does not define or inherit an implementation of the resolved method 'abstract java.lang.Class uuidGenerator()' of interface io.cucumber.core.options.CucumberOptionsAnnotationParser$CucumberOptions.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AbstractMethodError: Receiver class io.cucumber.testng.TestNGCucumberOptionsProvider$TestNGCucumberOptions does not define or inherit an implementation of the resolved method 'abstract java.lang.Class uuidGenerator()' of interface io.cucumber.core.options.CucumberOptionsAnnotationParser$CucumberOptions.
-at io.cucumber.core.options.CucumberOptionsAnnotationParser.addUuidGenerator(CucumberOptionsAnnotationParser.java:148)
-at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:46)
-at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:85)
-at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AbstractMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.CucumberRunner@68f1b17f]" started-at="2024-04-19T08:29:32 IST" name="tearDownClass" finished-at="2024-04-19T08:29:32 IST" duration-ms="0" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-19T17:07:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-19T17:07:34 IST" duration-ms="27276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a single Iteam to the cart and verify price consistency"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping for a product on Amazon"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-19T17:07:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-19T17:07:56 IST" duration-ms="22175" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a single Iteam to the cart and verify price consistency"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping for a product on Amazon"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //span[@id='submit.add-to-cart'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58280/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffe5bf6c8983d31754567d1ce409133e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@id='submit.add-to-cart'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58280/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ffe5bf6c8983d31754567d1ce409133e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.webautomation.utilities.ElementActionUtilites.waitUntilElementClickable(ElementActionUtilites.java:42)
+at com.webautomation.pom.SearchResultsPage.clickProductNameLinkForAddToCart(SearchResultsPage.java:46)
+at com.webautomation.stepdefinitions.ShoppingCartStepDefinitions.iadditeamtocart(ShoppingCartStepDefinitions.java:21)
+at ✽.I add the 1 item to the cart by clicking on Add to Cart(file:///D:/Java%20Notes/JAVA/WebAutomationAssignment/src/main/resources/features/ShoppingCart.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-19T17:07:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-19T17:08:26 IST" duration-ms="29568" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a multiple product to the cart and verify price consistency"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping for a product on Amazon"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [8999] but found [799]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [8999] but found [799]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at com.webautomation.stepdefinitions.ShoppingCartStepDefinitions.iVerifyPriceIdentical(ShoppingCartStepDefinitions.java:43)
+at ✽.I verify that the price is identical to the product page(file:///D:/Java%20Notes/JAVA/WebAutomationAssignment/src/main/resources/features/ShoppingCart.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-19T17:08:26 IST" name="tearDownClass" finished-at="2024-04-19T17:08:26 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- Runner.CucumberRunner -->
+      </class> <!-- runner.CucumberRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

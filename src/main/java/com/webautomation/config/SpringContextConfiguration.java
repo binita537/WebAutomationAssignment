@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 //this class  scan for all classes that are annotated with @Component
 import org.springframework.context.annotation.Scope;
 
+import com.webautomation.utilities.ProductWorld;
 import com.webautomation.webdrivers.DriverFactory;
 
 @Configuration
@@ -19,7 +20,6 @@ public class SpringContextConfiguration {
 
 	@Autowired
 	DriverFactory driverFactory;
-
 
 	@Bean
 	@Scope("cucumber-glue")
@@ -33,4 +33,9 @@ public class SpringContextConfiguration {
 		return new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
+	@Bean
+	@Scope("cucumber-glue")
+	public ProductWorld productWorld() {
+		return new ProductWorld();
+	}
 }

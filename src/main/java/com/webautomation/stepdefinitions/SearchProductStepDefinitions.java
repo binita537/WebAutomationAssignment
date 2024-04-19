@@ -3,17 +3,13 @@ package com.webautomation.stepdefinitions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.webautomation.pom.SearchResultsPage;
-
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchProductStepDefinitions extends BaseDefinition {
 
 	static final Logger logger = LoggerFactory.getLogger(SearchProductStepDefinitions.class);
 
-	// Step definitions for the first scenario
 	@Given("I open Amazon.com")
 	public void iOpenAmazon() {
 		logger.info("Amazon Page is loaded successfully");
@@ -30,9 +26,12 @@ public class SearchProductStepDefinitions extends BaseDefinition {
 	public void iSelectItemInList(int itemIndex) {
 
 		String productName = searchResultsPage.getProductNameFromSearchResult(itemIndex);
-		logger.info("This is the first product namet: " + productName);
-		String productPrice = searchResultsPage.getProductPriceFromSearchResult(itemIndex);
-		logger.info("This is the first product price: " + productPrice);
+		productWorld.put("productName", productName);
+		logger.info("Saving Product name into ProductWorld: " + productName);
+
+		int productPrice = searchResultsPage.getProductPriceFromSearchResult(itemIndex);
+		productWorld.put("productPrice", productPrice);
+		logger.info("Saving Product price into ProductWorld:" + productPrice);
 	}
 
 }

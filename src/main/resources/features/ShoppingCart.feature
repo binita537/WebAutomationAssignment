@@ -1,7 +1,7 @@
 Feature: Shopping for a product on Amazon
 
   @SingleProductInCart
-  Scenario Outline: : Add a single Iteam to the cart and verify price consistency
+  Scenario Outline: Add a single Iteam to the cart and verify price consistency
     Given I open Amazon.com
     When I type "<ProductName>" in the search field and press enter
     And I select the <ItemNumber> item in the list
@@ -16,7 +16,7 @@ Feature: Shopping for a product on Amazon
       | Laptop      |          1 |
 
   @MultipleProductInCart
-  Scenario Outline: : Add a multiple product to the cart and verify price consistency
+  Scenario Outline: Add a multiple product to the cart and verify price consistency
     Given I open Amazon.com
     When I type "<ProductName1>" in the search field and press enter
     And I select the <ItemNumber1> item in the list

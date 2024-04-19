@@ -16,9 +16,9 @@
         </discriminator>
         <sift>
             <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-                <file>test-output/${testName}.log</file>
+                <file>test-output/test-output-report/${testName}.log</file>
                 <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-                    <fileNamePattern>test-output/${testName}-%d{yyyy-MM-dd}.log</fileNamePattern>
+                    <fileNamePattern>test-output/test-output-report/${testName}-%d{yyyy-MM-dd}.log</fileNamePattern>
                 </rollingPolicy>
                 <encoder>
                     <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>

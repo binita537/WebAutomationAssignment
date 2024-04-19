@@ -21,21 +21,34 @@ public class Hooks extends BaseDefinition {
 	
 	@Before
 	public void setUp(Scenario scenario) {
-		 MDC.put("scenarioName", scenario.getName());
-		 logger.info("Started scenario: "+scenario.getName());
-		driver.get("https://www.amazon.in/");
-		driver.manage().window().maximize();
-		logger.info("Driver object initilise and lunching we application");
+	    try {
+	        MDC.put("scenarioName", scenario.getName());
+	        logger.info("Started scenario: " + scenario.getName());
+	        driver.get("https://www.amazon.in/");
+	        driver.manage().window().maximize();
+	        logger.info("Driver object initialized and launching web application");
+	    } catch (Exception e) {
+	        logger.error("Exception occurred during setup: " + e.getMessage());
+	        // You might want to handle the exception further or throw it
+	        throw new RuntimeException("Error during setup", e);
+	    }
 	}
 
 	@After
 	public void tearDown(Scenario scenario) {
-		if (driver != null) {
-	        driver.quit();
-	        logger.info("Quiting web Driver object");
+	    try {
+	        if (driver != null) {
+	            driver.quit();
+	            logger.info("Quitting web Driver object");
+	        }
+	        MDC.remove(scenario.getName());
+	        logger.info("Finished scenario: " + scenario.getName());
+	    } catch (Exception e) {
+	        logger.error("Exception occurred during teardown: " + e.getMessage());
+	        // You might want to handle the exception further or throw it
+	        throw new RuntimeException("Error during teardown", e);
 	    }
-		 MDC.remove(scenario.getName());
-		 logger.info("Finished scenario: "+scenario.getName());
 	}
+
 
 }

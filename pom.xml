@@ -16,6 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,6 +27,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			
 		</dependency>
 
 		<dependency>
@@ -63,7 +65,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.10.1</version>
-			<scope>test</scope>
 		</dependency>
 
 
@@ -86,6 +87,13 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -106,6 +114,28 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>net.masterthought</groupId>
+				<artifactId>maven-cucumber-reporting</artifactId>
+				<version>5.7.5</version>
+				<executions>
+					<execution>
+						<id>execution</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<projectName>Cucumber-jvm-example</projectName>
+							<inputDirectory>target/Reports/cucumber.json</inputDirectory>
+							<outputDirectory>test-output/cucumber-report-html</outputDirectory>							
+							<jsonFiles>
+                               <param>**/*.json</param>
+                            </jsonFiles>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 
 

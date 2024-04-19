@@ -19,24 +19,33 @@ public class ShoppingCartPage extends BasePage {
 	public static final String PRODUCT_DETAIL_XPATH ="//div[@class='a-section a-spacing-mini sc-list-body sc-java-remote-feature']//div[@class='a-row sc-list-item sc-java-remote-feature'][%s]";
 	public static final String PRODUCTS_NAME_XPATH =PRODUCT_DETAIL_XPATH+"//span[@class='a-truncate-full a-offscreen']";
 	public static final String PRODUCT_QUNTITY_XPATH=PRODUCT_DETAIL_XPATH+"//span[@class='a-dropdown-prompt']";
-	public static final String PRODUCT_PRICE_XPATH=PRODUCT_DETAIL_XPATH+"//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']//span";
+	public static final String PRODUCT_PRICE_XPATH=PRODUCT_DETAIL_XPATH+"//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold']";
 	public static final String PRODUCT_SUBTOTAL_XPATH="//span[@id='sc-subtotal-amount-buybox']//span";
+	public static final String CART_PRODUCT_COUNT_XPATH ="//span[@id='nav-cart-count']";
 	
 	public ShoppingCartPage(WebDriver driver, ElementActionUtilites elementActionUtilites) {
 		super(driver, elementActionUtilites);
 	}
 
+	public int getProductCount() {
+	    By cartProductCountElement = By.xpath(CART_PRODUCT_COUNT_XPATH);
+	    elementActionUtilites.waitUntilElementClickable(driver, cartProductCountElement);
+	    String countText = driver.findElement(cartProductCountElement).getText();
+	    return Integer.parseInt(countText);
+	}
+	
+	
 	public void clickOnShoppingCardButton() {
 		By ShoppingCartButtonElementt = By.xpath(SHOPPING_CARD_BUTTON_XPATH);
 		elementActionUtilites.waitUntilElementClickable(driver, ShoppingCartButtonElementt);
 		driver.findElement(ShoppingCartButtonElementt).click();
 	}
 
-	public String getProductQuntity(int index) {
+	public int getProductQuntity(int index) {
 		By shoppingCartButtonElement = By.xpath(String.format(PRODUCT_QUNTITY_XPATH, index));
 		elementActionUtilites.waitUntilElementPresent(driver, shoppingCartButtonElement);
 		WebElement searchResults = driver.findElement(shoppingCartButtonElement);
-		return searchResults.getText();
+		return  Integer.parseInt(searchResults.getText());
 
 	}
 
@@ -48,19 +57,22 @@ public class ShoppingCartPage extends BasePage {
 
 	}
 
-	public String getProductPrice(int index) {
+	public int getProductPrice(int index) {
 		By productPriceElement = By.xpath(String.format(PRODUCT_PRICE_XPATH, index));
 		elementActionUtilites.waitUntilElementPresent(driver, productPriceElement);
 		WebElement searchResults = driver.findElement(productPriceElement);
-		return searchResults.getText();
+		String str=searchResults.getText().replace(",", "").replace(".00", "").trim();
+		return  Integer.parseInt(str);
 
 	}
 
-	public String getProductSubTotal() {
+	public int getProductSubTotal() {
 		By productSubTotalElement = By.xpath(PRODUCT_SUBTOTAL_XPATH);
 		elementActionUtilites.waitUntilElementPresent(driver, productSubTotalElement);
 		WebElement searchResults = driver.findElement(productSubTotalElement);
-		return searchResults.getText();
+		String str=searchResults.getText().replace(",", "").replace(".00", "").trim();
+		return  Integer.parseInt(str);
+
 
 	}
 

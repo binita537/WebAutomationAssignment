@@ -9,6 +9,7 @@ import com.webautomation.pom.HomePage;
 import com.webautomation.pom.SearchResultsPage;
 import com.webautomation.pom.ShoppingCartPage;
 import com.webautomation.utilities.ElementActionUtilites;
+import com.webautomation.utilities.ProductWorld;
 
 import io.cucumber.spring.CucumberContextConfiguration;
 
@@ -18,7 +19,6 @@ public class BaseDefinition {
 	@Autowired
 	WebDriver driver;
 
-
 	@Autowired
 	HomePage homePage;
 
@@ -27,8 +27,10 @@ public class BaseDefinition {
 
 	@Autowired
 	ShoppingCartPage shoppingCartPage;
-	
+
 	@Autowired
 	ElementActionUtilites elementActionUtilites;
 
+	@Autowired
+	protected ProductWorld productWorld;
 }
