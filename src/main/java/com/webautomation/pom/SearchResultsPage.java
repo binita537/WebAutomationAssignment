@@ -49,6 +49,7 @@ public class SearchResultsPage extends BasePage {
 
 		elementActionUtilites.waitUntilElementClickable(driver, By.xpath(CLOSE_ADD_TO_CART_POP_UP_XPATH));
 		driver.findElement(By.xpath(CLOSE_ADD_TO_CART_POP_UP_XPATH)).click();
+		driver.close();
 		driver.switchTo().window(originalWindowHandle);
 		driver.navigate().refresh();
 

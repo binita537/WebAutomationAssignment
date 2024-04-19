@@ -37,10 +37,9 @@ public class ShoppingCartStepDefinitions extends BaseDefinition {
 
 		int ExpectedPriceFromProductWorld = (int) productWorld.get("productPrice");
 		logger.info("Getting actaul product price from Product word: " + ExpectedPriceFromProductWorld);
-		logger.info("Verifying the product name is identical :" + ExpectedPriceFromProductWorld + "\n"
+		logger.info("Verifying the product price is identical :" + ExpectedPriceFromProductWorld + "\n"
 				+ ActaulproductPriceFromCart);
 
-		Assert.assertEquals(ExpectedPriceFromProductWorld, ActaulproductPriceFromCart);
 		Assert.assertEquals(ExpectedPriceFromProductWorld, ActaulproductPriceFromCart,
 				String.format("Product price mismatch: Expected '%s' but found '%s'", ExpectedPriceFromProductWorld,
 						ActaulproductPriceFromCart));
@@ -58,8 +57,8 @@ public class ShoppingCartStepDefinitions extends BaseDefinition {
 		productWorld.put("cartProductsubtotal", actaulCartProductsubtotal);
 		logger.info("Saving Product Subtotal into ProductWorld: " + actaulCartProductsubtotal);
 
-		int expectedCartProductsubtotal = cartProductQuntity * cartProductPriceOnCart;
-
+		int expectedCartProductsubtotal = (int) productWorld.get("totalPrice");
+		
 		logger.info("Verifying Product Subtotal on cart: " + expectedCartProductsubtotal);
 
 		Assert.assertEquals(expectedCartProductsubtotal, actaulCartProductsubtotal);

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1219275948\testng-customsuite.xml</span>
+                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1400652739\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,26 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a multiple product to the cart and verify price consistency&quot;, &quot;Shopping for a product on Amazon...)">runScenario("Add a multiple product to the cart and verify price consistency", "Shopping for a product on Amazon...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a single Iteam to the cart and verify price consistency&quot;, &quot;Shopping for a product on Amazon&quot;)">runScenario("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,7 +104,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a single Iteam to the cart and verify price consistency&quot;, &quot;Shopping for a product on Amazon&quot;)">runScenario("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Add a multiple product to the cart and verify price consistency&quot;, &quot;Shopping for a product on Amazon...)">runScenario("Add a multiple product to the cart and verify price consistency", "Shopping for a product on Amazon...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -138,9 +119,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">runner.CucumberRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -150,59 +131,6 @@
                   </a> <!-- runScenario("Add a multiple product to the cart and verify price consistency", "Shopping for a product on Amazon...) -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Add a multiple product to the cart and verify price consistency", "Shopping for a product on Amazon")</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [8999] but found [799]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:907)
-	at org.testng.Assert.assertEquals(Assert.java:917)
-	at com.webautomation.stepdefinitions.ShoppingCartStepDefinitions.iVerifyPriceIdentical(ShoppingCartStepDefinitions.java:43)
-	at ✽.I verify that the price is identical to the product page(file:///D:/Java%20Notes/JAVA/WebAutomationAssignment/src/main/resources/features/ShoppingCart.feature:28)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Add a single Iteam to the cart and verify price consistency&quot;, &quot;Shopping for a product on Amazon&quot;)">
-                  </a> <!-- runScenario("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon")</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[@id=&apos;submit.add-to-cart&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58280}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58280/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ffe5bf6c8983d31754567d1ce409133e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at com.webautomation.utilities.ElementActionUtilites.waitUntilElementClickable(ElementActionUtilites.java:42)
-	at com.webautomation.pom.SearchResultsPage.clickProductNameLinkForAddToCart(SearchResultsPage.java:46)
-	at com.webautomation.stepdefinitions.ShoppingCartStepDefinitions.iadditeamtocart(ShoppingCartStepDefinitions.java:21)
-	at ✽.I add the 1 item to the cart by clicking on Add to Cart(file:///D:/Java%20Notes/JAVA/WebAutomationAssignment/src/main/resources/features/ShoppingCart.feature:8)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">runner.CucumberRunner</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Add a single Iteam to the cart and verify price consistency&quot;, &quot;Shopping for a product on Amazon&quot;)">
-                  </a> <!-- runScenario("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -212,7 +140,7 @@ Session ID: ffe5bf6c8983d31754567d1ce409133e
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--1219275948\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse-1400652739\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -269,24 +197,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runner.CucumberRunner')
-data.setCell(0, 3, 29568);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'runner.CucumberRunner')
-data.setCell(1, 3, 27276);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runScenario')
-data.setCell(2, 2, 'runner.CucumberRunner')
-data.setCell(2, 3, 22175);
+data.setCell(0, 3, 126896);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -314,28 +234,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runner.CucumberRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@6fdb1a59)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@73a116d)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon")</span>
-                <span class="method-start">1085 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Add a single Iteam to the cart and verify price consistency", "Shopping for a product on Amazon")</span>
-                <span class="method-start">28365 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runScenario("Add a multiple product to the cart and verify price consistency", "Shopping for a product on Amazon...)</span>
-                <span class="method-start">50546 ms</span>
+                <span class="method-start">1286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">80120 ms</span>
+                <span class="method-start">128192 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

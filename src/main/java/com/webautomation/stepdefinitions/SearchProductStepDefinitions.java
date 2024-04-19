@@ -24,14 +24,31 @@ public class SearchProductStepDefinitions extends BaseDefinition {
 
 	@When("I select the {int} item in the list")
 	public void iSelectItemInList(int itemIndex) {
+		
+		
 
 		String productName = searchResultsPage.getProductNameFromSearchResult(itemIndex);
 		productWorld.put("productName", productName);
 		logger.info("Saving Product name into ProductWorld: " + productName);
 
 		int productPrice = searchResultsPage.getProductPriceFromSearchResult(itemIndex);
-		productWorld.put("productPrice", productPrice);
+		
+		
+		
+		Integer totalPrice = (Integer) productWorld.get("productPrice");
+	    
+	    // If the product already exists in the map, add the new price to the existing total
+	    if (totalPrice != null) {
+	        totalPrice += productPrice;
+	    } else {
+	        totalPrice = productPrice;
+	    }
+	    
+	    productWorld.put("totalPrice", totalPrice);
+	    
+	    productWorld.put("productPrice", productPrice);
 		logger.info("Saving Product price into ProductWorld:" + productPrice);
+		
 	}
 
 }

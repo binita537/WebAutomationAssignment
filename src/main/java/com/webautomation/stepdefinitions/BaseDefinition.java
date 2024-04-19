@@ -33,4 +33,7 @@ public class BaseDefinition {
 
 	@Autowired
 	protected ProductWorld productWorld;
+	
+
+	
 }

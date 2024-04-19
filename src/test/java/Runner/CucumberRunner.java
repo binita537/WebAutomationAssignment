@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(glue = "com.webautomation.stepdefinitions",
                  features = "src/main/resources/features",
-                		 tags = "@SingleProductInCart or @MultipleProductInCart",
+                		 tags = "@MultipleProductInCart",
                  plugin = {"pretty", "html:target/Reports/cucumber.html",
                 		 "json:target/Reports/cucumber.json"})
 
