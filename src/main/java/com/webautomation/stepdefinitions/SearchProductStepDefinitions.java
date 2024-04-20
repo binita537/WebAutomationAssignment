@@ -1,6 +1,7 @@
 package com.webautomation.stepdefinitions;
 
 import org.slf4j.Logger;
+
 import org.slf4j.LoggerFactory;
 
 import io.cucumber.java.en.Given;
@@ -12,13 +13,14 @@ public class SearchProductStepDefinitions extends BaseDefinition {
 
 	@Given("I open Amazon.com")
 	public void iOpenAmazon() {
+		
 		logger.info("Amazon Page is loaded successfully");
 	}
 
 	@When("I type {string} in the search field and press enter")
 	public void iTypeInSearchField(String searchText) {
 		logger.info("Entring text into search bar");
-		searchResultsPage.enterTextSearchBar(searchText);
+		searchResultsPage.enterTextintoSearchBar(searchText);
 
 	}
 
@@ -37,7 +39,6 @@ public class SearchProductStepDefinitions extends BaseDefinition {
 		
 		Integer totalPrice = (Integer) productWorld.get("productPrice");
 	    
-	    // If the product already exists in the map, add the new price to the existing total
 	    if (totalPrice != null) {
 	        totalPrice += productPrice;
 	    } else {

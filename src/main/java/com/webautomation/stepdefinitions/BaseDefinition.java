@@ -1,6 +1,8 @@
 package com.webautomation.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -9,7 +11,7 @@ import com.webautomation.pom.HomePage;
 import com.webautomation.pom.SearchResultsPage;
 import com.webautomation.pom.ShoppingCartPage;
 import com.webautomation.utilities.ElementActionUtilites;
-import com.webautomation.utilities.ProductWorld;
+import com.webautomation.data.ProductWorld;
 
 import io.cucumber.spring.CucumberContextConfiguration;
 
@@ -33,7 +35,5 @@ public class BaseDefinition {
 
 	@Autowired
 	protected ProductWorld productWorld;
-	
-
 	
 }

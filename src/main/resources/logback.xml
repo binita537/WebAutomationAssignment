@@ -25,6 +25,7 @@
                 </encoder>
             </appender>
         </sift>
+        <additivity>false</additivity>
     </appender>
 
     <!-- Root logger -->

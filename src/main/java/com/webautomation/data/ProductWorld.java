@@ -1,4 +1,4 @@
-package com.webautomation.utilities;
+package com.webautomation.data;
 
 import java.util.HashMap;
 import java.util.HashMap;

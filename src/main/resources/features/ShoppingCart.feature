@@ -31,4 +31,6 @@ Feature: Shopping for a product on Amazon
     Examples: 
       | ProductName1 | ProductName2 | ItemNumber1 | ItemNumber2 |
       | Headphones   | Keyboard     |           1 |           1 |
-  
+      
+      
+ 

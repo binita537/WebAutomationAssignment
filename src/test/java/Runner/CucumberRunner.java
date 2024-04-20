@@ -5,9 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(glue = "com.webautomation.stepdefinitions",
                  features = "src/main/resources/features",
-                		 tags = "@MultipleProductInCart",
-                 plugin = {"pretty", "html:target/Reports/cucumber.html",
-                		 "json:target/Reports/cucumber.json"})
+                		 tags = "@SingleProductInCart or @MultipleProductInCart",
+                 plugin = {"pretty", "html:target/cucumber.html",
+                		 "json:target/cucumber.json"})
 
 public class CucumberRunner extends AbstractTestNGCucumberTests {
 }

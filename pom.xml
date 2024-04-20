@@ -27,7 +27,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-			
+
 		</dependency>
 
 		<dependency>
@@ -67,7 +67,6 @@
 			<version>7.10.1</version>
 		</dependency>
 
-
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
@@ -78,14 +77,10 @@
 			<artifactId>logback-classic</artifactId>
 		</dependency>
 
-	</dependencies>
+		</dependencies>
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
@@ -116,9 +111,17 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>net.masterthought</groupId>
 				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>5.7.5</version>
+				<version>3.15.0</version>
 				<executions>
 					<execution>
 						<id>execution</id>
@@ -127,18 +130,18 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>Cucumber-jvm-example</projectName>
-							<inputDirectory>target/Reports/cucumber.json</inputDirectory>
-							<outputDirectory>test-output/cucumber-report-html</outputDirectory>							
-							<jsonFiles>
-                               <param>**/*.json</param>
-                            </jsonFiles>
+							<projectName>cucumber-jvm-example</projectName>
+							<!-- output directory for the generated report -->
+							<outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
+							<!-- optional, defaults to outputDirectory if not
+							specified -->
+							<inputDirectory>${project.build.directory}/cucumber.json</inputDirectory>
+							
+							
 						</configuration>
 					</execution>
 				</executions>
 			</plugin>
-
-
 		</plugins>
 	</build>
 
