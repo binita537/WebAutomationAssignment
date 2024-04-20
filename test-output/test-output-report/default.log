@@ -250,3 +250,162 @@ System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.v
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, close {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49152}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49152/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+13:32:34.307 [main] INFO  c.w.stepdefinitions.BaseDefinition - Starting BaseDefinition using Java 17.0.7 with PID 237140 (D:\Java Notes\JAVA\WebAutomationAssignment\target\classes started by Lenovo in D:\Java Notes\JAVA\WebAutomationAssignment)
+13:32:34.375 [main] INFO  c.w.stepdefinitions.BaseDefinition - No active profile set, falling back to 1 default profile: "default"
+13:32:34.652 [main] INFO  c.w.stepdefinitions.BaseDefinition - Started BaseDefinition in 0.754 seconds (process running for 4.312)
+13:32:37.543 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 124.0.6367.60 (resolved driver for Chrome 124)
+13:32:37.590 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.cache\selenium\chromedriver\win64\124.0.6367.60\chromedriver.exe
+13:32:40.641 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 124, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 124
+13:32:41.859 [main] INFO  c.w.stepdefinitions.Hooks - Started scenario: Add a single Iteam to the cart and verify price consistency
+13:32:49.918 [main] INFO  c.w.stepdefinitions.Hooks - Driver object initialized and launching web application
+13:32:49.936 [main] INFO  c.w.s.SearchProductStepDefinitions - Amazon Page is loaded successfully
+13:32:49.955 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:32:53.042 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: HP M22f 21.5-inches, 54.6 cm, FHD Monitor Eye Safe Certified Full HD IPS 3-Sided Micro-Edge Monitor, 75Hz, AMD Free Sync with 1xVGA, 1xHDMI 1.4 Ports, 300 nits (Silver, 1920 x 1080 Pixels)
+13:32:53.101 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:9099
+13:32:53.182 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 0
+13:33:06.549 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Iteam added to the card successfully
+13:33:07.550 [main] INFO  c.w.s.ShoppingCartStepDefinitions - User clicked on Shopping Cart
+13:33:17.740 [main] ERROR c.w.utilities.ElementActionUtilites - Element By.xpath: //div[@class='a-section a-spacing-mini sc-list-body sc-java-remote-feature']//div[@class='a-row sc-list-item sc-java-remote-feature'][1]//span[@class='a-size-medium a-color-base sc-price sc-white-space-nowrap sc-product-price a-text-bold'] not present within the specified timeout.
+13:33:18.531 [main] INFO  c.w.stepdefinitions.Hooks - Quitting web Driver object
+13:33:18.532 [main] INFO  c.w.stepdefinitions.Hooks - Finished scenario: Add a single Iteam to the cart and verify price consistency
+13:33:18.546 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'webDriver' propagated an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58900}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58900/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+13:33:18.613 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 124.0.6367.60 (resolved driver for Chrome 124)
+13:33:18.646 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.cache\selenium\chromedriver\win64\124.0.6367.60\chromedriver.exe
+13:33:21.227 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 124, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 124
+13:33:21.244 [main] INFO  c.w.stepdefinitions.Hooks - Started scenario: Add a single Iteam to the cart and verify price consistency
+13:33:25.198 [main] INFO  c.w.stepdefinitions.Hooks - Driver object initialized and launching web application
+13:33:25.200 [main] INFO  c.w.s.SearchProductStepDefinitions - Amazon Page is loaded successfully
+13:33:25.201 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:33:28.377 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: Dell 14 Laptop, 12th Gen Intel Core i3-1215U Processor/8GB/512GB SSD/Intel UHD Graphics/14.0"(35.56cm) FHD/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Grey/Thin & Light 1.48kg
+13:33:28.436 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:34990
+13:33:28.526 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 0
+13:33:39.193 [main] ERROR c.w.utilities.ElementActionUtilites - Element By.xpath: //span[@id='submit.add-to-cart'] not clicked within the specified timeout.
+13:33:40.385 [main] INFO  c.w.stepdefinitions.Hooks - Quitting web Driver object
+13:33:40.385 [main] INFO  c.w.stepdefinitions.Hooks - Finished scenario: Add a single Iteam to the cart and verify price consistency
+13:33:40.387 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'webDriver' propagated an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59105}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59105/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+13:33:40.419 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 124.0.6367.60 (resolved driver for Chrome 124)
+13:33:40.437 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.cache\selenium\chromedriver\win64\124.0.6367.60\chromedriver.exe
+13:33:42.500 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 124, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 124
+13:33:42.524 [main] INFO  c.w.stepdefinitions.Hooks - Started scenario: Add a multiple product to the cart and verify price consistency
+13:33:54.076 [main] INFO  c.w.stepdefinitions.Hooks - Driver object initialized and launching web application
+13:33:54.085 [main] INFO  c.w.s.SearchProductStepDefinitions - Amazon Page is loaded successfully
+13:33:54.090 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:33:58.209 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: CrossBeats Roar 2.0 Hybrid ANC Headphones, Bluetooth Wireless Over Ear Headphones 40db Active Noise Cancelling, 85hours Playtime, Fast Charge, Ambient Sound Mode,47mm Driver, Built-in Equalizer Black
+13:33:58.262 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:3699
+13:33:58.327 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 0
+13:34:15.896 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Iteam added to the card successfully
+13:34:15.898 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:34:18.918 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite
+13:34:18.949 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:2900
+13:34:19.003 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 1
+13:34:30.880 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Iteam added to the card successfully
+13:34:32.112 [main] INFO  c.w.s.ShoppingCartStepDefinitions - User clicked on Shopping Cart
+13:34:32.158 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Getting actaul product price from cart: 2900
+13:34:32.159 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Getting actaul product price from Product word: 2900
+13:34:32.160 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Verifying the product price is identical :2900
+2900
+13:34:32.220 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Cart Product Count is : 2
+13:34:32.220 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Product Price is: 2900
+13:34:32.260 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving Product Subtotal into ProductWorld: 6599
+13:34:32.261 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Verifying Product Subtotal on cart: 6599
+13:34:33.246 [main] INFO  c.w.stepdefinitions.Hooks - Quitting web Driver object
+13:34:33.247 [main] INFO  c.w.stepdefinitions.Hooks - Finished scenario: Add a multiple product to the cart and verify price consistency
+13:34:33.267 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'webDriver' propagated an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59269}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59269/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+13:34:45.414 [main] INFO  c.w.stepdefinitions.BaseDefinition - Starting BaseDefinition using Java 17.0.7 with PID 240532 (D:\Java Notes\JAVA\WebAutomationAssignment\target\classes started by Lenovo in D:\Java Notes\JAVA\WebAutomationAssignment)
+13:34:45.474 [main] INFO  c.w.stepdefinitions.BaseDefinition - No active profile set, falling back to 1 default profile: "default"
+13:34:45.747 [main] INFO  c.w.stepdefinitions.BaseDefinition - Started BaseDefinition in 0.728 seconds (process running for 3.14)
+13:34:46.122 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 124.0.6367.60 (resolved driver for Chrome 124)
+13:34:46.183 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.cache\selenium\chromedriver\win64\124.0.6367.60\chromedriver.exe
+13:34:49.527 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 124, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 124
+13:34:50.547 [main] INFO  c.w.stepdefinitions.Hooks - Started scenario: Add a single Iteam to the cart and verify price consistency
+13:34:55.669 [main] INFO  c.w.stepdefinitions.Hooks - Driver object initialized and launching web application
+13:34:55.706 [main] INFO  c.w.s.SearchProductStepDefinitions - Amazon Page is loaded successfully
+13:34:55.741 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:34:58.751 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: HP M22f 21.5-inches, 54.6 cm, FHD Monitor Eye Safe Certified Full HD IPS 3-Sided Micro-Edge Monitor, 75Hz, AMD Free Sync with 1xVGA, 1xHDMI 1.4 Ports, 300 nits (Silver, 1920 x 1080 Pixels)
+13:34:58.811 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:9099
+13:34:58.971 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 0
+13:35:10.879 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Iteam added to the card successfully
+13:35:12.342 [main] INFO  c.w.s.ShoppingCartStepDefinitions - User clicked on Shopping Cart
+13:35:12.382 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Getting actaul product price from cart: 9099
+13:35:12.383 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Getting actaul product price from Product word: 9099
+13:35:12.385 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Verifying the product price is identical :9099
+9099
+13:35:12.437 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Cart Product Count is : 1
+13:35:12.438 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Product Price is: 9099
+13:35:12.476 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving Product Subtotal into ProductWorld: 9099
+13:35:12.477 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Verifying Product Subtotal on cart: 9099
+13:35:13.015 [main] INFO  c.w.stepdefinitions.Hooks - Quitting web Driver object
+13:35:13.015 [main] INFO  c.w.stepdefinitions.Hooks - Finished scenario: Add a single Iteam to the cart and verify price consistency
+13:35:13.029 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'webDriver' propagated an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59549/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+13:35:13.080 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 124.0.6367.60 (resolved driver for Chrome 124)
+13:35:13.117 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.cache\selenium\chromedriver\win64\124.0.6367.60\chromedriver.exe
+13:35:15.027 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 124, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 124
+13:35:15.048 [main] INFO  c.w.stepdefinitions.Hooks - Started scenario: Add a single Iteam to the cart and verify price consistency
+13:35:23.990 [main] INFO  c.w.stepdefinitions.Hooks - Driver object initialized and launching web application
+13:35:23.997 [main] INFO  c.w.s.SearchProductStepDefinitions - Amazon Page is loaded successfully
+13:35:24.000 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:35:27.117 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: Dell 14 Laptop, 12th Gen Intel Core i3-1215U Processor/8GB/512GB SSD/Intel UHD Graphics/14.0"(35.56cm) FHD/Windows 11 + MSO'21/15 Month McAfee/Spill-Resistant Keyboard/Grey/Thin & Light 1.48kg
+13:35:27.186 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:34990
+13:35:27.435 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 0
+13:35:38.119 [main] ERROR c.w.utilities.ElementActionUtilites - Element By.xpath: //span[@id='submit.add-to-cart'] not clicked within the specified timeout.
+13:35:38.975 [main] INFO  c.w.stepdefinitions.Hooks - Quitting web Driver object
+13:35:38.976 [main] INFO  c.w.stepdefinitions.Hooks - Finished scenario: Add a single Iteam to the cart and verify price consistency
+13:35:38.978 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'webDriver' propagated an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59733/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+13:35:39.025 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 124.0.6367.60 (resolved driver for Chrome 124)
+13:35:39.051 [main] INFO  i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Lenovo\.cache\selenium\chromedriver\win64\124.0.6367.60\chromedriver.exe
+13:35:41.133 [main] WARN  o.o.s.devtools.CdpVersionFinder - Unable to find an exact match for CDP version 124, returning the closest version; found: 123; Please update to a Selenium version that supports CDP version 124
+13:35:41.157 [main] INFO  c.w.stepdefinitions.Hooks - Started scenario: Add a multiple product to the cart and verify price consistency
+13:35:44.760 [main] INFO  c.w.stepdefinitions.Hooks - Driver object initialized and launching web application
+13:35:44.764 [main] INFO  c.w.s.SearchProductStepDefinitions - Amazon Page is loaded successfully
+13:35:44.766 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:35:47.238 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: CrossBeats Roar 2.0 Hybrid ANC Headphones, Bluetooth Wireless Over Ear Headphones 40db Active Noise Cancelling, 85hours Playtime, Fast Charge, Ambient Sound Mode,47mm Driver, Built-in Equalizer Black
+13:35:47.328 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:3699
+13:35:47.530 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 0
+13:35:56.643 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Iteam added to the card successfully
+13:35:56.644 [main] INFO  c.w.s.SearchProductStepDefinitions - Entring text into search bar
+13:36:00.189 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product name into ProductWorld: Logitech Pebble Keys 2 K380s, Multi-Device Bluetooth Wireless Keyboard with Customisable Shortcuts, Slim and Portable, Easy-Switch for Windows, macOS, iPadOS, Android, Chrome OS - Tonal Graphite
+13:36:00.268 [main] INFO  c.w.s.SearchProductStepDefinitions - Saving Product price into ProductWorld:2900
+13:36:00.327 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving cart Product Count into ProductWorld: 1
+13:36:09.971 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Iteam added to the card successfully
+13:36:11.440 [main] INFO  c.w.s.ShoppingCartStepDefinitions - User clicked on Shopping Cart
+13:36:11.480 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Getting actaul product price from cart: 2900
+13:36:11.480 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Getting actaul product price from Product word: 2900
+13:36:11.481 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Verifying the product price is identical :2900
+2900
+13:36:11.537 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Cart Product Count is : 2
+13:36:11.537 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Product Price is: 2900
+13:36:11.581 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Saving Product Subtotal into ProductWorld: 6599
+13:36:11.581 [main] INFO  c.w.s.ShoppingCartStepDefinitions - Verifying Product Subtotal on cart: 6599
+13:36:12.167 [main] INFO  c.w.stepdefinitions.Hooks - Quitting web Driver object
+13:36:12.168 [main] INFO  c.w.stepdefinitions.Hooks - Finished scenario: Add a multiple product to the cart and verify price consistency
+13:36:12.171 [main] WARN  o.s.b.f.s.DisposableBeanAdapter - Custom destroy method 'close' on bean with name 'webDriver' propagated an exception: org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59912}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59912/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}

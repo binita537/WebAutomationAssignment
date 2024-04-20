@@ -25,28 +25,21 @@ public class SearchProductStepDefinitions extends BaseDefinition {
 	}
 
 	@When("I select the {int} item in the list")
-	public void iSelectItemInList(int itemIndex) {
-		
-		
+	public void iSelectItemInList(int itemIndex) {	
 
 		String productName = searchResultsPage.getProductNameFromSearchResult(itemIndex);
 		productWorld.put("productName", productName);
 		logger.info("Saving Product name into ProductWorld: " + productName);
 
-		int productPrice = searchResultsPage.getProductPriceFromSearchResult(itemIndex);
-		
-		
-		
+		int productPrice = searchResultsPage.getProductPriceFromSearchResult(itemIndex);		
 		Integer totalPrice = (Integer) productWorld.get("productPrice");
 	    
 	    if (totalPrice != null) {
 	        totalPrice += productPrice;
 	    } else {
 	        totalPrice = productPrice;
-	    }
-	    
-	    productWorld.put("totalPrice", totalPrice);
-	    
+	    }	    
+	    productWorld.put("totalPrice", totalPrice);	    
 	    productWorld.put("productPrice", productPrice);
 		logger.info("Saving Product price into ProductWorld:" + productPrice);
 		

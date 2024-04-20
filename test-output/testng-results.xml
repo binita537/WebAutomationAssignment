@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-20T00:44:57 IST" name="Default suite" finished-at="2024-04-20T00:47:07 IST" duration-ms="129974">
+  <suite started-at="2024-04-20T13:34:43 IST" name="Default suite" finished-at="2024-04-20T13:36:12 IST" duration-ms="88799">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-04-20T00:44:57 IST" name="Default test" finished-at="2024-04-20T00:47:07 IST" duration-ms="129974">
+    <test started-at="2024-04-20T13:34:43 IST" name="Default test" finished-at="2024-04-20T13:36:12 IST" duration-ms="88799">
       <class name="runner.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T00:44:57 IST" name="setUpClass" finished-at="2024-04-20T00:44:58 IST" duration-ms="1156" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T13:34:43 IST" name="setUpClass" finished-at="2024-04-20T13:34:44 IST" duration-ms="1093" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3ec62141]]>
+                <![CDATA[org.testng.TestRunner@3ba96967]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T00:44:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T00:45:45 IST" duration-ms="46699" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T13:34:44 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T13:35:13 IST" duration-ms="28432" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T00:45:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T00:46:15 IST" duration-ms="30278" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T13:35:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T13:35:38 IST" duration-ms="25942" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -57,10 +57,10 @@
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bdfbe2c553cffd996e5a60cf7b3a6ee9, clickElement {id=f.173D7279109A40690D575B1BE23F0266.d.2227658B1EC2B13F55D6DEA895D3D0C2.e.294}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65331/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bdfbe2c553cffd996e5a60cf7b3a6ee9)] -> xpath: //span[@id='submit.add-to-cart']]
-Session ID: bdfbe2c553cffd996e5a60cf7b3a6ee9]]>
+Command: [5ee274a8c9e6e36626099a0dedbcc54a, clickElement {id=f.43B92C7BEC82C18BFAF777AB4376F6B8.d.552D0CA17F10A613F838EB98E08A9EC1.e.300}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59733/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5ee274a8c9e6e36626099a0dedbcc54a)] -> xpath: //span[@id='submit.add-to-cart']]
+Session ID: 5ee274a8c9e6e36626099a0dedbcc54a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
@@ -68,10 +68,10 @@ Session ID: bdfbe2c553cffd996e5a60cf7b3a6ee9]]>
 Build info: version: '4.14.1', revision: '03f8ede370'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bdfbe2c553cffd996e5a60cf7b3a6ee9, clickElement {id=f.173D7279109A40690D575B1BE23F0266.d.2227658B1EC2B13F55D6DEA895D3D0C2.e.294}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65331/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (bdfbe2c553cffd996e5a60cf7b3a6ee9)] -> xpath: //span[@id='submit.add-to-cart']]
-Session ID: bdfbe2c553cffd996e5a60cf7b3a6ee9
+Command: [5ee274a8c9e6e36626099a0dedbcc54a, clickElement {id=f.43B92C7BEC82C18BFAF777AB4376F6B8.d.552D0CA17F10A613F838EB98E08A9EC1.e.300}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.60, chrome: {chromedriverVersion: 124.0.6367.60 (8771130bd84f..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59733/devtoo..., se:cdpVersion: 124.0.6367.60, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (5ee274a8c9e6e36626099a0dedbcc54a)] -> xpath: //span[@id='submit.add-to-cart']]
+Session ID: 5ee274a8c9e6e36626099a0dedbcc54a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -96,7 +96,7 @@ at ✽.I add the 1 item to the cart by clicking on Add to Cart(file:///D:/Java%2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T00:46:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T00:47:07 IST" duration-ms="51650" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T13:35:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-04-20T13:36:12 IST" duration-ms="33192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +112,7 @@ at ✽.I add the 1 item to the cart by clicking on Add to Cart(file:///D:/Java%2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T00:47:07 IST" name="tearDownClass" finished-at="2024-04-20T00:47:07 IST" duration-ms="142" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.CucumberRunner@36fc695d]" started-at="2024-04-20T13:36:12 IST" name="tearDownClass" finished-at="2024-04-20T13:36:12 IST" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
